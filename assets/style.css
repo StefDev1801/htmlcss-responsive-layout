@@ -1,19 +1,227 @@
+/* #region Common */ 
 body{
-    background-color: aqua;
+    /* background-color: aqua; */
+    font-family: 'Inter', sans-serif;
+font-family: 'PT Sans', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px dashed;
+}
+:root{
+--responsive-header:#0084fd;
+--responsive-primary:#b5ddff;
+--responsive-secondary:#9792e4;
+--respondary-footer:#333333;
+--respondary-lighter:white;
+}
+/* #endregion */
+
+
+
+/* #region Utilities */
+img{
+    max-width: 100%;
+}
+.row{
+    width: 100%;
+    display: flex;
+    /* gap: 1rem; */
+    margin: 1rem 0;
+}
+a{
+    color: white;
+}
+.gap-things{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ciao{
+    width: 100%;
+    margin: auto;
+}
+.photo_circle{
+    margin: auto;
+    width: 8rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    object-fit: ;
 }
 
 
-
-
-@media screen and (min-width: 768px) {
-
-    
+.primary_card,
+.secoundary_card,
+.lighter_card{
+    border-radius: 5%;
 }
+.primary_card{
+    background-color: var(--responsive-primary);
+    padding: 1rem 1rem 0rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.secoundary_card{
+    background-color: var(--responsive-secondary);
+}
+.lighter_card{
+    background-color: var(--respondary-lighter);
+    padding:  1rem 0;
+}
+.circle{
+    width: 2rem;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--responsive-secondary);
+}
+.text-center{
+    text-align: center;
+}
+.circle{
+    margin: auto;
+}
+/* debug */
+.debug .card{
+    background-color: red;
+
+}
+.debug #site_main{
+    /* height: 100px; */
+    background-color: var(--responsive-header);
+}
+.debug #site_footer{
+    height: 100px;
+    background-color: var(--respondary-footer);
+}
+/* #endregion */
+
+
+
+/* #region Header*/
+.menu{
+    color: var(--respondary-lighter);
+}
+#site_header{
+    background-color: var(--responsive-header);
+}
+/* #site_header{
+    position: fixed;
+    top: 1rem;
+    background-color: red;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+
+} */
+.container-sm{
+    margin: 0 1rem;
+}
+.container_header-sm{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    align-items: center;
+}
+/* #endregion */
+
+
+
+/* #region Main*/
+/* introduction */
+.introduction{
+    margin: 2rem 0;
+    background-color: var(--respondary-lighter);
+}
+.btn-download{
+    background-color: var(--responsive-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: 60%;
+    border-radius: 10%;
+}
+.introduction h4{
+    color: var(--responsive-header);
+    font-size: 2rem;
+}
+.introduction i{
+    color: var(--responsive-header);
+}
+/* planning */
+.planning{
+    background-color: var(--responsive-secondary);
+}
+.padding{
+    padding: 1rem;
+}
+/* benefits */
+.benefits{
+    background-color: var(--responsive-secondary);
+}
+.benefits h2{
+    color: white;
+}
+.big_number{
+    color: var(--responsive-secondary);
+    font-size: 4rem;
+}
+
+
+/* #endregion */
+
+
+
+/* #region Footer*/
+/* #endregion */
+
+
+
+
+/* #region media query */
+/* scatto sm???? Non dovrei mettere max width?*/
+@media screen and (min-width: 300px) {
+    .row{
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+    .col-sm-12{
+        width: calc((100%/12)*12);
+    }
+}
+/* scatto md */
 @media screen and (min-width: 992px) {
-
-    
+.col-md-8{
+    width: calc((100%/12)*8);
 }
-@media screen and (1200px) {
-
-    
+.col-md-4{
+    width: calc((100%/12)*4);
 }
+}
+/* scatto lg */
+@media screen and ( min-width: 1200px) {
+body{
+    /* width: 1250px;
+    margin: auto; */
+}
+.col-lg-8{
+    width: calc((100%/12)*8);
+}
+.col-lg-4{
+    width: calc((100%/12)*4);
+}
+.col-lg-12{
+    width: calc((100%/12)*12);
+}
+
+}
+/* #endregion */

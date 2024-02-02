@@ -6,64 +6,358 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://kit.fontawesome.com/44abc1504c.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="debug">
+<body class="">
 
-    <heder id="site_header">
 
-    </heder>
+
+
+    <div id="site_header">
+        <!-- should I put a nav in here? -->
+        <div class="container_header-sm container-sm container_largest ">
+            <div class="logo">
+                <img src="./assets/img/logo.png" alt="">
+            </div>
+            <div class="menu">
+                <i class="fa-solid fa-bars fa-2x"></i>
+                <!-- Basta metterci fa-fw??? -->
+            </div>
+        </div>
+    </div>
     <!-- /#site_header -->
+
+
+
 
     <main id="site_main">
 
         <div class="introduction">
-            <div class="container_largest">
+            <div class="container-sm container_largest ">
+                <div class="row">
+                    <div class="col-sm-12 col-md-8 primary_card">
+                        <!-- card per dare radius -->
+                        <h4>
+                            Get a demo application
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, sequi molestias ad, quasi
+                            accusamus iste vero id perferendis laudantium incidunt officiis deleniti inventore sit, eum
+                            laboriosam doloribus perspiciatis omnis illo.
+                        </p>
+                        <div class="btn-download">
+                            <a href="#">
+                                <i class="fa-brands fa-apple"></i>
+                                <strong>App Store</strong>
+                            </a>
+                        </div>
+                        <img src="./assets/img/phone.png" alt="">
 
+                    </div>
+                    <div class="col-sm-12 col-md-4 primary_card text-center">
+                        <i class="fa-regular fa-file-code fa-4x"></i>
+                        <h4>Clean Code</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus deserunt commodi eos
+                            eveniet iure soluta quaerat velit sapiente impedit facere tenetur similique ad, enim ipsam
+                            iste, quos amet, aut itaque!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-4 primary_card text-center">
+                        <i class="fa-solid fa-compass-drafting fa-4x"></i>
+                        <h4>Web Design</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus ullam sit corporis
+                            tempore enim! Vero similique, veritatis repellendus rerum eius voluptatibus natus maxime. Et
+                            quos qui a? Cumque, dolor culpa.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 primary_card text-center">
+                        <i class="fa-solid fa-laptop-code fa-4x"></i>
+                        <h4>Developement</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis quibusdam optio nemo, vero
+                            porro, nesciunt, a ex consequatur voluptate voluptatem numquam adipisci molestiae assumenda.
+                            Cum eveniet velit maxime dicta obcaecati.
+                        </p>
+                    </div>
+                    <div class="col-sm-12 col-md-4 primary_card text-center">
+                        <i class="fa-solid fa-bullhorn fa-4x"></i>
+                        <h4>Branding</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis dolorum, temporibus beatae
+                            deleniti reiciendis quod nobis ipsam quia laudantium fugiat! Pariatur voluptate sunt
+                            consequuntur odit harum temporibus voluptates possimus obcaecati!
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.introduction -->
 
-        <div class="hint">
-            <div class="container_small">
-
+        <div class="planning">
+            <div class="container-sm">
+                <div class="row">
+                    <div class="col-sm-12 gap-things">
+                        <img src="./assets/img/planning1.png" alt="">
+                        <h3>Strategic Planning</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam qui, dicta cumque, illo
+                            odio sapiente repudiandae velit neque vitae aspernatur quis maiores quo in porro vel tempore
+                            quos. Assumenda, quod?</p>
+                    </div>
+                    <div class="col-sm-12 lighter_card text-center gap-things">
+                        <img src="./assets/img/planning2.png" alt="">
+                        <h3>App Developement</h3>
+                        <p><em>Develop an on-demand app for your delivery business to reach your targeted costumers
+                                without any interruption.</em></p>
+                        <div class="circle">
+                            &darr;
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- /.hint -->
+        <!-- /.planning -->
 
         <div class="testimonial">
-            <div class="container_largest">
+            <div class="container-sm container_largest">
 
+                <row>
+                    <div class="col-sm-12 text-center gap-things">
+                        <span>
+                            TESTIMONIALS
+                        </span>
+                        <h2>
+                            We are committed experts partners
+                        </h2>
+                        <p>
+                            We place huge value on strong relationship and have seen the benefits they bring to our
+                            business. Costumer feedback is vital in helping us to get it right.
+
+                        </p>
+                    </div>
+                </row>
+                <row>
+                    <div class="col-sm-12 ciao secoundary_card gap-things text-center padding">
+                        <img src="./assets/img/testimonial1.jpg" alt="" class="photo_circle">
+
+                        <div>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe inventore, consectetur
+                            nam
+                            quidem assumenda praesentium. Ex doloremque, possimus rem temporibus maxime illo esse ea
+                            aliquid
+                            nam repellat totam adipisci!
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h4>NAT REYNOLDS</h4>
+                    </div>
+                </row>
+                <row>
+                    <div class="col-sm-12 ciao secoundary_card text-center gap-things padding">
+                        <img src="./assets/img/testimonial2.jpg" alt="" class="photo_circle">
+
+                        <div>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe inventore, consectetur
+                            nam
+                            quidem assumenda praesentium. Ex doloremque, possimus rem temporibus maxime illo esse ea
+                            aliquid
+                            nam repellat totam adipisci!
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+                        <h4>CELIA ALMEDA</h4>
+                    </div>
+                </row>
+                <row>
+                    <div class="col-sm-12 ciao secoundary_card text-center gap-things padding">
+                        <img src="./assets/img/testimonial3.jpg" alt="" class="photo_circle">
+                        <div>
+                            <i class="fa-solid fa-quote-left"></i>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima saepe inventore, consectetur
+                            nam
+                            quidem assumenda praesentium. Ex doloremque, possimus rem temporibus maxime illo esse ea
+                            aliquid
+                            nam repellat totam adipisci!
+                            <i class="fa-solid fa-quote-right"></i>
+                        </div>
+
+                        <h4>BOB ROBERTS</h4>
+                    </div>
+                </row>
             </div>
         </div>
         <!-- /.testimonial -->
 
         <div class="benefits">
-            <div class="container_largest">
-
+            <div class="container-sm container_largest">
+                <div class="text-center">
+                    <h2>Benefits of working with us</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <bold class="big_number">
+                            01
+                        </bold>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <div class="big_number">
+                            01
+                        </div>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <div class="big_number">
+                            01
+                        </div>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <div class="big_number">
+                            01
+                        </div>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <div class="big_number">
+                            01
+                        </div>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 lighter_card gap-things padding">
+                        <div class="big_number">
+                            01
+                        </div>
+                        <h4>
+                            High Quality
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias tenetur ab, minus quas
+                            nostrum quod molestiae repellat quasi ipsum obcaecati nisi iste, atque dolores sapiente
+                            explicabo aliquid? Debitis, neque pariatur.
+                        </p>
+                        <div class="btn-more">
+                            <a href="">more</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.benefits -->
 
-        <div class="anout_us">
-            <div class="container_large">
-
+        <div class="about_us">
+            <div class="container-sm container_large">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2>Abou Us</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quas nulla excepturi eos et
+                            eveniet soluta esse necessitatibus in. Ratione repellat omnis alias vel fugiat obcaecati
+                            esse eius veniam voluptas?
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi dolorum deserunt sit, quo
+                            nihil necessitatibus laboriosam recusandae animi, impedit, consequatur eligendi rerum
+                            quisquam aliquid minima minus natus facilis eius inventore.
+                        </p>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="">
+                            <!-- text-center gap-things padding">
+                        <img src="./assets/img/testimonial3.jpg" alt="" class="photo_circle"> -->
+                            <img src="./assets/img/about.jpg" alt="" class="photo_circle">
+                        </div>
+                        <strong>I help companies Lorem ipsum dolor sit amet consectetur adipisicing.</strong><br>
+                        <a href="#">
+                            <i class="fa-brands fa-linkedin"></i>
+                            Find me on Linkedin
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- /.anout_us -->
 
         <div class="get_started">
             <div class="container_small">
-
+                <div class="boh">
+                    <!-- ha senso dare un nome diverso a questo dato che non intendo utilizzare flexbox????? -->
+                </div>
             </div>
         </div>
         <!-- /.get_started -->
+
+
+
+
+
 
     </main>
     <!-- /#site_main -->
 
 
-    <footer id="footer">
+    <footer id="site_footer">
 
     </footer>
     <!-- /#footer -->
